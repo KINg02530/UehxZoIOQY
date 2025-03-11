@@ -18,7 +18,7 @@ jobs:
        id-token: write
        contents: read
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
@@ -53,7 +53,7 @@ jobs:
     name: Close Pull Request Job
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Close Pull Request
       uses: actions/github-script@v6
       with:
